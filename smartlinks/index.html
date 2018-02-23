@@ -152,8 +152,8 @@
 <p>Poll this endpoint to obtain smartlink information.</p>
 <h3 id="uri-method">URI / Method</h3>
 <ul>
-<li>Endpoint (all smartlinks): <code>http://roots.bravads.com/api/smartlinks</code> (Method: <code>GET</code>)</li>
-<li>Endpoint (single smartlink): <code>http://roots.bravads.com/api/smartlinks/ID</code> (Method: <code>GET</code>)</li>
+<li>Endpoint (all smartlinks): <code>https://roots.bravads.com/api/smartlinks</code> (Method: <code>GET</code>)</li>
+<li>Endpoint (single smartlink): <code>https://roots.bravads.com/api/smartlinks/ID</code> (Method: <code>GET</code>)</li>
 </ul>
 <h3 id="response-fields">Response fields</h3>
 <table>
@@ -236,13 +236,13 @@
 <td>payout_type</td>
 <td>string</td>
 <td>Yes</td>
-<td>The payout type. If not present, the payout types of the offers involved are being used.</td>
+<td>The payout type. If null, the payout types of the offers involved are being used.</td>
 </tr>
 <tr>
 <td>payout_value</td>
 <td>float</td>
 <td>Yes</td>
-<td>The payout value. If not present, value is N/A or the payout values of the offers involved are being used.</td>
+<td>The payout value. If null, value is N/A or the payout values of the offers involved are being used.</td>
 </tr>
 <tr>
 <td>countries</td>
