@@ -22,8 +22,8 @@ incent                   | boolean   | Yes      | If the smartlink allows incent
 expiration_date          | date      | Yes      | Expiration date in YYYY-MM-DD format.
 daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap  | integer   | Yes      | The monthly conversions cap.
-payout_type              | string    | Yes      | The payout type. If not present, the payout types of the offers involved are being used.
-payout_value             | float     | Yes      | The payout value. If not present, value is N/A or the payout values of the offers involved are being used.
+payout_type              | string    | Yes      | The payout type. If null, the payout types of the offers involved are being used.
+payout_value             | float     | Yes      | The payout value. If null, value is N/A or the payout values of the offers involved are being used.
 countries                | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
 devices                  | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems        | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
