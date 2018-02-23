@@ -36,3 +36,17 @@ The response body will also include the following JSON with the error descriptio
     }
 }
 ```
+
+### Rate limit
+
+The API is limited to 15 requests per minute per user.
+
+If the limit is exceeded, you'll receive a `429 HTTP error` with the following body: `Too Many Attempts.`
+
+You can check the response headers to determine how many requests you have left:
+
+Header                | Present       | Description
+--------------------- | ------------- | ----------------------------------------------------------------------------
+x-ratelimit-limit     | Always        | The number of requests allowed per minute.
+x-ratelimit-remaining | Always        | The number of requests remaining for the current minute.
+x-ratelimit-reset     | Limit reached | The time at which the current rate limit window resets in UTC epoch seconds.
