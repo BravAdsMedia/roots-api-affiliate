@@ -71,6 +71,9 @@
                 <li class="toctree-l3"><a href="#http-errors">HTTP Errors</a></li>
                 
             
+                <li class="toctree-l3"><a href="#rate-limit">Rate limit</a></li>
+                
+            
             </ul>
         
     </li>
@@ -210,6 +213,37 @@
     }
 }
 </code></pre>
+
+<h3 id="rate-limit">Rate limit</h3>
+<p>The API is limited to 15 requests per minute per user.</p>
+<p>If the limit is exceeded, you'll receive a <code>429 HTTP error</code> with the following body: <code>Too Many Attempts.</code></p>
+<p>You can check the response headers to determine how many requests you have left:</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Present</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x-ratelimit-limit</td>
+<td>Always</td>
+<td>The number of requests allowed per minute.</td>
+</tr>
+<tr>
+<td>x-ratelimit-remaining</td>
+<td>Always</td>
+<td>The number of requests remaining for the current minute.</td>
+</tr>
+<tr>
+<td>x-ratelimit-reset</td>
+<td>Limit reached</td>
+<td>The time at which the current rate limit window resets in UTC epoch seconds.</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
