@@ -4,7 +4,7 @@ Poll this endpoint to obtain the available offers you can use to request a new c
 
 ### URI / Method
 
-* Endpoint: `http://roots.bravads.com/api/campaignrequests/available_offers` (Method: `GET`)
+* Endpoint: `https://roots.bravads.com/api/campaignrequests/available_offers` (Method: `GET`)
 
 ### Response fields
 

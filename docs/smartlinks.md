@@ -4,8 +4,8 @@ Poll this endpoint to obtain smartlink information.
 
 ### URI / Method
 
-* Endpoint (all smartlinks): `http://roots.bravads.com/api/smartlinks` (Method: `GET`)
-* Endpoint (single smartlink): `http://roots.bravads.com/api/smartlinks/ID` (Method: `GET`)
+* Endpoint (all smartlinks): `https://roots.bravads.com/api/smartlinks` (Method: `GET`)
+* Endpoint (single smartlink): `https://roots.bravads.com/api/smartlinks/ID` (Method: `GET`)
 
 ### Response fields
 

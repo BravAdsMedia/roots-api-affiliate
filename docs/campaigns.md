@@ -4,8 +4,8 @@ Poll this endpoint to obtain campaign information.
 
 ### URI / Method
 
-* Endpoint (all campaigns): `http://roots.bravads.com/api/campaigns` (Method: `GET`)
-* Endpoint (single campaign): `http://roots.bravads.com/api/campaigns/ID` (Method: `GET`)
+* Endpoint (all campaigns): `https://roots.bravads.com/api/campaigns` (Method: `GET`)
+* Endpoint (single campaign): `https://roots.bravads.com/api/campaigns/ID` (Method: `GET`)
 
 ### Response fields
 
