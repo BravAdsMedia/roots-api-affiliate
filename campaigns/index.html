@@ -275,6 +275,12 @@
 <td>The payout value. If null, value is N/A.</td>
 </tr>
 <tr>
+<td>dynamic_payout</td>
+<td>boolean</td>
+<td>No</td>
+<td>If dynamic payout is false the campaign is deactivated whenever the offer payout is reduced.</td>
+</tr>
+<tr>
 <td>countries</td>
 <td>array</td>
 <td>No</td>
@@ -345,6 +351,7 @@
             &quot;monthly_conversions_cap&quot;: 13913,
             &quot;payout_type&quot;: &quot;CPA&quot;,
             &quot;payout_value&quot;: 0.33,
+            &quot;dynamic_payout&quot;: true,
             &quot;countries&quot;: {
                 &quot;include&quot;: [
                     &quot;EE&quot;,
