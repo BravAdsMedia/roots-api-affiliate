@@ -29,6 +29,7 @@ daily_conversions_cap           | integer   | Yes      | The daily conversions c
 monthly_conversions_cap         | integer   | Yes      | The monthly conversions cap.
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | Yes      | The payout value. If null, value is N/A.
+dynamic_payout                  | boolean   | No       | If dynamic payout is false the campaign is deactivated whenever the offer payout is reduced.
 countries                       | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
@@ -66,6 +67,7 @@ creatives                       | array     | No       | List of available creat
             "monthly_conversions_cap": 13913,
             "payout_type": "CPA",
             "payout_value": 0.33,
+            "dynamic_payout": true,
             "countries": {
                 "include": [
                     "EE",
