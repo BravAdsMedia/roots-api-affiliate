@@ -28,6 +28,7 @@ countries                | array     | No       | List of country codes (ISO 316
 devices                  | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems        | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types         | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+carriers                 | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 
 ####Include/exclude behavior for targeting fields
 
@@ -77,6 +78,13 @@ connection_types         | array     | No       | List of connection types for t
                 "include": [
                     "Dial-up",
                     "Other/Unknown"
+                ]
+            },
+            "carriers": {
+                "include": [
+                    "Digi Mobil (IT)",
+                    "Lumitel (BI)",
+                    "Play (PL)"
                 ]
             }
         },

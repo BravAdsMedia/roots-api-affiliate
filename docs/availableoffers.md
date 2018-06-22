@@ -24,6 +24,7 @@ countries                       | array     | No       | List of country codes (
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 preview                         | string    | Yes      | The fullsize preview image URL. Hotlinking not allowed.
 preview_thumb                   | string    | Yes      | The thumbnail preview image URL. Hotlinking not allowed.
 status                          | string    | No       | The offer status. Posible values: Available, Pending, Denied. Pending indicates you have already requested a campaign and the request is being evaluated. Denied means you have already requested a campaign and the request was not approved. 
@@ -64,6 +65,11 @@ status                          | string    | No       | The offer status. Posib
             "connection_types": {
                 "include": [
                     "Wi-Fi"
+                ]
+            },
+            "carriers": {
+                "exclude": [
+                    "Orange (FR)"
                 ]
             },
             "preview": "https://roots.bravads.com/x/previews/20.gif",

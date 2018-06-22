@@ -34,6 +34,7 @@ countries                       | array     | No       | List of country codes (
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 preview                         | string    | Yes      | The fullsize preview image URL. Hotlinking not allowed.
 preview_thumb                   | string    | Yes      | The thumbnail preview image URL. Hotlinking not allowed.
 creatives                       | array     | No       | List of available creative files. The file sizes are expressed in KB. Extensions enabled: jpg, jpeg, jpe, gif, png, swf, zip, rar, mp4. Hotlinking not allowed.
@@ -91,6 +92,12 @@ creatives                       | array     | No       | List of available creat
                     "Corporate",
                     "Dial-up",
                     "Other/Unknown"
+                ]
+            },
+            "carriers": {
+                "exclude": [
+                    "MTA (US)",
+                    "Pelephone (IL)"
                 ]
             },
             "preview": "https://roots.bravads.com/x/previews/25.jpg",
