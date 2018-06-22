@@ -268,6 +268,12 @@
 <td>No</td>
 <td>List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
 </tr>
+<tr>
+<td>carriers</td>
+<td>array</td>
+<td>No</td>
+<td>List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
+</tr>
 </tbody>
 </table>
 <h4 id="includeexclude-behavior-for-targeting-fields">Include/exclude behavior for targeting fields</h4>
@@ -316,6 +322,13 @@
                 &quot;include&quot;: [
                     &quot;Dial-up&quot;,
                     &quot;Other/Unknown&quot;
+                ]
+            },
+            &quot;carriers&quot;: {
+                &quot;include&quot;: [
+                    &quot;Digi Mobil (IT)&quot;,
+                    &quot;Lumitel (BI)&quot;,
+                    &quot;Play (PL)&quot;
                 ]
             }
         },
